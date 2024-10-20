@@ -36,9 +36,10 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Run GolangCI-Lint Action by pulling pre-built image
-      uses: docker://matoous/golangci-lint-action:v1.1.0
+      
+    - name: Setup golangci-lint Action
+      uses: nickhstr/action-setup-golangci-lint@v0.1.0
+            
 
   
   push:
